@@ -115,7 +115,7 @@ export function CommitmentVersionRecoveryDialog({
                   </p>
                 )}
                 <p className="text-xs text-red-600 mt-1">
-                  Review the version history and select a different superseded version, or contact your payroll administrator. No salary values are shown for security.
+                  Review the version history and select a different superseded version, or contact your payroll administrator. Salary values are intentionally hidden to protect payroll privacy.
                 </p>
               </div>
             </div>

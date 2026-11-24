@@ -102,7 +102,7 @@ export function describeVersionGuidance(version: SalaryCommitmentVersion): strin
           : ""
       }. Select an earlier superseded version to roll back further.`;
     case "superseded":
-      return `Version ${version.version} was superseded and can be recovered. Recovery activates commitment ${version.commitmentPreview} for subsequent payroll verification without revealing salary figures.`;
+      return `Version ${version.version} was superseded and can be recovered. Recovery activates commitment ${version.commitmentPreview} for subsequent payroll verification without revealing salary figures. Select this version to review recovery guidance before confirming.`;
     default:
       return `Version ${version.version} has an unknown status. Contact an administrator before attempting recovery.`;
   }

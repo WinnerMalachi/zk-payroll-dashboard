@@ -18,11 +18,15 @@ export function SalaryCommitmentVersionWarning({
   return (
     <div
       role="alert"
+      aria-live="polite"
       data-testid="salary-commitment-version-warning"
       className="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 p-3 text-amber-800"
     >
       <AlertTriangle className="mt-0.5 h-4 w-4 flex-shrink-0" aria-hidden="true" />
-      <p className="text-sm">{guidance}</p>
+      <div className="space-y-1">
+        <p className="text-sm font-medium">Unsupported salary commitment version</p>
+        <p className="text-sm">{guidance}</p>
+      </div>
     </div>
   );
 }
